@@ -605,7 +605,6 @@ www.greenhyla.com
       for (const row of data) {
         const newSale = new SalesRadar({
           SalesQuotationNumber: row.SalesQuotationNumber,
-          CaseId: row.CaseId,
           SalesResponsible: row.SalesResponsible,
           CustomerOwner: row.CustomerOwner,
           VesselName: row.VesselName,
@@ -654,7 +653,6 @@ app.get('/api/get-tracked-vessels', async (req, res) => {
         const fields = {
             loginUserId:1,
             RegionName:1,
-            CaseId:1,
             AgentName:1,
             Agent:1,
             ETATime:1,
