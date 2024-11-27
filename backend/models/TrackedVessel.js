@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const trackedVesselSchema = new mongoose.Schema({
-    CaseId: { type: Number, required: true},
     loginUserId: { type: String, required: true},
     AIS: {
         MMSI: Number,
