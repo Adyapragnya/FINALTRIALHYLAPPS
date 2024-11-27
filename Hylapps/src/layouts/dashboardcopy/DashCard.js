@@ -372,29 +372,29 @@ function DashCard({ onRefresh, onHighlight }) {
   &nbsp;
 
   {/* Tooltip for Bulk Upload */}
-  <Tooltip title="Upload Bulk Data" arrow>
-    <label htmlFor="file-upload" style={{ cursor: "pointer" }}>
-      <Button
-        variant="contained"
-        color="primary"
-        style={{
-          backgroundColor: "#0F67B1",
-          color: "white",
-          borderRadius: "5px",
-        }}
-        component="span"
-      >
-        <i className="fa-solid fa-file"></i>
-      </Button>
-    </label>
-  </Tooltip>
-  <input
-    type="file"
-    accept=".xlsx, .xls"
-    style={{ display: "none" }}
-    id="file-upload"
-    onChange={handleFileUpload}
-  />
+  // <Tooltip title="Upload Bulk Data" arrow>
+  //   <label htmlFor="file-upload" style={{ cursor: "pointer" }}>
+  //     <Button
+  //       variant="contained"
+  //       color="primary"
+  //       style={{
+  //         backgroundColor: "#0F67B1",
+  //         color: "white",
+  //         borderRadius: "5px",
+  //       }}
+  //       component="span"
+  //     >
+  //       <i className="fa-solid fa-file"></i>
+  //     </Button>
+  //   </label>
+  // </Tooltip>
+  // <input
+  //   type="file"
+  //   accept=".xlsx, .xls"
+  //   style={{ display: "none" }}
+  //   id="file-upload"
+  //   onChange={handleFileUpload}
+  // />
 
 
       {/* bulk sales */}
