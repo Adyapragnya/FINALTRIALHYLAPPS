@@ -135,14 +135,14 @@ const getFilteredRoutes = (role) => {
     return allRoutes;
   } else if (role === "organization admin") {
     // Return only specific routes for Organization Admin
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard",  "alerts", "create-users", "OpsDashboard", "OpsRADAR"].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard",  "alerts", "create-users", "OpsRADAR"].includes(route.key));
   } else if (role === "organizational user") {
     // Return only specific routes for Organization User
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "dashboard","OpsDashboard", "OpsRADAR"].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" ,"HYLA", "dashboard", "OpsRADAR"].includes(route.key));
   } 
   else if (role === "guest") {
     // Return empty array or a default route for guest users
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard","OpsDashboard",].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard"].includes(route.key));
   } 
   
   else  {
