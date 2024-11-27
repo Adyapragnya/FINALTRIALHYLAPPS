@@ -35,6 +35,14 @@ const allRoutes = [
   //   icon: <ArgonBox component="i" color="success" fontSize="14px" className="fa-solid fa-sliders" />,
   //   element: <Operations />,
   // },
+    {
+    type: "route",
+    name: "Dashboard",
+    key: "HYLA",
+    route: "/HYLA",
+    icon: <ArgonBox component="i" color="warning" fontSize="14px" className="fa-solid fa-house-laptop" />,
+    element: <Dashboardcopy />, // Changed from component to element
+  },
   {
     type: "route",
     name: "Ops RADAR",
@@ -43,14 +51,7 @@ const allRoutes = [
     icon: <ArgonBox component="i" color="success" fontSize="14px" className="fa-solid fa-satellite-dish" />,
     element: <VesselTracker />,
   },
-  {
-    type: "route",
-    name: "Dashboard",
-    key: "HYLA",
-    route: "/HYLA",
-    icon: <ArgonBox component="i" color="warning" fontSize="14px" className="fa-solid fa-house-laptop" />,
-    element: <Dashboardcopy />, // Changed from component to element
-  },
+
   {
     type: "route",
     name: "Ship Dashboard",
