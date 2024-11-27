@@ -18,14 +18,14 @@ import { Route } from "react-router-dom";
 
 // Define all routes
 const allRoutes = [
-  {
-    type: "route",
-    name: "Sales RADAR",
-    key: "SalesRadar",
-    route: "/SalesRadar",
-    icon: <ArgonBox component="i" color="success" fontSize="14px" className="fa-solid fa-sliders" />,
-    element: <SalesRadar />,
-  },
+  // {
+  //   type: "route",
+  //   name: "Sales RADAR",
+  //   key: "SalesRadar",
+  //   route: "/SalesRadar",
+  //   icon: <ArgonBox component="i" color="success" fontSize="14px" className="fa-solid fa-sliders" />,
+  //   element: <SalesRadar />,
+  // },
 
   // {
   //   type: "route",
@@ -134,10 +134,10 @@ const getFilteredRoutes = (role) => {
     return allRoutes;
   } else if (role === "organization admin") {
     // Return only specific routes for Organization Admin
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard", "geofence" , "alerts", "create-users", "OpsDashboard", "OpsRADAR","SalesRadar"].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard", "geofence" , "alerts", "create-users", "OpsDashboard", "OpsRADAR"].includes(route.key));
   } else if (role === "organizational user") {
     // Return only specific routes for Organization User
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "dashboard","OpsDashboard", "OpsRADAR","SalesRadar"].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "dashboard","OpsDashboard", "OpsRADAR"].includes(route.key));
   } 
   else if (role === "guest") {
     // Return empty array or a default route for guest users
