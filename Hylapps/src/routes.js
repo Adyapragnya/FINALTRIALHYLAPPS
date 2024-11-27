@@ -142,7 +142,7 @@ const getFilteredRoutes = (role) => {
   } 
   else if (role === "guest") {
     // Return empty array or a default route for guest users
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard"].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard", "OpsRADAR"].includes(route.key));
   } 
   
   else  {
