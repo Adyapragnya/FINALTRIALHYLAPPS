@@ -85,7 +85,7 @@ function Illustration() {
         // Update authentication state
         setIsAuthenticated(true); // Ensure the state reflects authentication status
         
-        navigate("/SalesRadar"); // Redirect
+        navigate("/HYLA"); // Redirect
         console.log("Token stored:", data.token);
         console.log("User role:", userRole); // Check role in console
       } else {
