@@ -134,7 +134,7 @@ const getFilteredRoutes = (role) => {
     return allRoutes;
   } else if (role === "organization admin") {
     // Return only specific routes for Organization Admin
-    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard", "geofence" , "alerts", "create-users", "OpsDashboard", "OpsRADAR"].includes(route.key));
+    return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "HYLA", "dashboard",  "alerts", "create-users", "OpsDashboard", "OpsRADAR"].includes(route.key));
   } else if (role === "organizational user") {
     // Return only specific routes for Organization User
     return allRoutes.filter((route) => ["sign-in" ,"reset-password" , "dashboard","OpsDashboard", "OpsRADAR"].includes(route.key));
