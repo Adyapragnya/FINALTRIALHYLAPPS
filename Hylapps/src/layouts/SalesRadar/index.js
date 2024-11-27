@@ -163,18 +163,19 @@ function Geofence() {
 
   return (
     <DashboardLayout>
+    <br></br>
          {/* Marquee for 'Under Development' */}
-         <div style={{
-        backgroundColor: '#ffcc00', 
-        color: '#ffcc00', 
-        fontSize: '16px', 
-        fontWeight: 'bold', 
-        textAlign: 'center', 
-        padding: '10px', 
-        marginBottom: '20px'
-      }}>
-        <marquee>This is UNDER DEVELOPMENT | This is UNDER DEVELOPMENT |This is UNDER DEVELOPMENT|This is UNDER DEVELOPMENT |This is UNDER DEVELOPMENT|This is UNDER DEVELOPMENT</marquee>
-      </div>
+      //    <div style={{
+      //   backgroundColor: '#ffcc00', 
+      //   color: '#ffcc00', 
+      //   fontSize: '16px', 
+      //   fontWeight: 'bold', 
+      //   textAlign: 'center', 
+      //   padding: '10px', 
+      //   marginBottom: '20px'
+      // }}>
+      //   <marquee>This is UNDER DEVELOPMENT | This is UNDER DEVELOPMENT |This is UNDER DEVELOPMENT|This is UNDER DEVELOPMENT |This is UNDER DEVELOPMENT|This is UNDER DEVELOPMENT</marquee>
+      // </div>
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} /> {/* Toast container */}
       <DashboardNavbar vesselEntries={vesselEntries} />
       <ArgonBox py={3}>
